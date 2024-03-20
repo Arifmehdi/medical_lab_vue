@@ -30,6 +30,10 @@ class AppServiceProvider extends ServiceProvider
             //     view()->share('addons', $addons);
             //     view()->share('__date_format', $__date_format);
         // }
+
+        //general
+        // $settings=setting('info');
+        // dd($settings);
         $languages=\App\Models\Language::select('iso')->where('active',true)->get();
         view()->share('languages', $languages);
 
