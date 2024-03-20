@@ -28,7 +28,7 @@
   </div>
 @endsection
 @section('content')
-@can('admin')
+{{--@can('admin')--}}
 
 <!-- Admin Reports -->
 <div class="row">
@@ -56,7 +56,8 @@
         <div class="icon">
           <i class="fa fa-vial"></i>
         </div>
-        <a href="{{route('admin.cultures.index')}}" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>
+        {{--<a href="{{route('admin.cultures.index')}}" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>--}}
+        <a href="#" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>
       </div>
     </div>
     <!-- ./col -->
@@ -70,7 +71,8 @@
         <div class="icon">
           <i class="fa fa-capsules"></i>
         </div>
-        <a href="{{route('admin.antibiotics.index')}}" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>
+        {{--<a href="{{route('admin.antibiotics.index')}}" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>--}}
+        <a href="#" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>
       </div>
     </div>
     <!-- ./col -->
@@ -84,7 +86,8 @@
         <div class="icon">
           <i class="fa fa-user-injured"></i>
         </div>
-        <a href="{{route('admin.patients.index')}}" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>
+        {{--<a href="{{route('admin.patients.index')}}" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>--}}
+        <a href="#" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>
       </div>
     </div>
     <div class="col-lg-2 col-6">
@@ -97,7 +100,8 @@
         <div class="icon">
           <i class="fas fa-file-contract nav-icon"></i>
         </div>
-        <a href="{{route('admin.contracts.index')}}" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>
+        {{--<a href="{{route('admin.contracts.index')}}" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>--}}
+        <a href="#" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>
       </div>
     </div>
     <div class="col-lg-2 col-6">
@@ -110,7 +114,8 @@
         <div class="icon">
           <i class="fa fa-home"></i>
         </div>
-        <a href="{{route('admin.visits.index')}}" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>
+        {{--<a href="{{route('admin.visits.index')}}" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>--}}
+        <a href="#" class="small-box-footer">{{__('More info')}} <i class="fas fa-arrow-circle-right"></i></a>
       </div>
     </div>
 
@@ -123,7 +128,7 @@
 
         <div class="info-box-content">
           <span class="info-box-text">{{__('Today income amount')}}</span>
-          <span class="info-box-number">{{$today_paid}} {{get_currency()}}</span>
+          <span class="info-box-number">{{$today_paid}} {{--get_currency()--}}</span>
         </div>
       </div>
     </div>
@@ -135,7 +140,7 @@
 
         <div class="info-box-content">
           <span class="info-box-text">{{__('Today expense amount')}}</span>
-          <span class="info-box-number">{{$today_total_expense}} {{get_currency()}}</span>
+          <span class="info-box-number">{{$today_total_expense}} {{--get_currency()--}}</span>
         </div>
       </div>
     </div>
@@ -147,7 +152,7 @@
 
         <div class="info-box-content">
           <span class="info-box-text">{{__('Today profit amount')}}</span>
-          <span class="info-box-number">{{$today_profit}} {{get_currency()}}</span>
+          <span class="info-box-number">{{$today_profit}} {{--get_currency()--}}</span>
         </div>
       </div>
     </div>
@@ -256,7 +261,7 @@
 <!-- \Online Users -->
 
 <!-- Today scheduled visits -->
-@can('view_visit')
+{{--@can('view_visit')--}}
 <div class="row">
   <div class="col-lg-12 table-responsive">
       <div class="card card-danger">
@@ -321,11 +326,11 @@
                   @endif
                 </td>
                 <td width="100px">
-                  @can('view_visit')
+                  {{--@can('view_visit')--}}
                     <a href="{{route('admin.visits.show',$visit['id'])}}" class="btn btn-primary btn-sm">
                       <i class="fa fa-eye"></i>
                     </a>
-                  @endcan
+                  {{--@endcan--}}
                 </td>
               </tr>
               @endforeach
@@ -340,10 +345,10 @@
 
   </div>
 </div>
-@endcan
+{{--@endcan--}}
 <!-- /Today scheduled visits -->
 </div>
-@endcan
+{{--@endcan--}}
 @endsection
 
 @section('scripts')
