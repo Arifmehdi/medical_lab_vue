@@ -57,6 +57,7 @@ Route::post('/login',[AdminController::class,'login_submit'])->name('admin.auth.
             Route::get('get_tests', 'TestsController@ajax')->name('get_tests');
         });
 
+        Route::get('change_locale/{lang}',[App\Http\Controllers\HomeController::class, 'change_locale'])->name('change_locale');
 // Auth::routes();
 // admin.auth.login_submit
 
