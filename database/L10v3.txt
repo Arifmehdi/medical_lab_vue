@@ -33,4 +33,22 @@ Tools - L -10
         }
 04. vue router for routing
     -- page create with parrallaly with component
-    --
+    -- install vue router "npm install vue-router@next"
+    -- create router.js parralally in app.js
+    -- import { createWebHashHistory, createRouter } from "vue-router";
+    -- import all pages
+    -- create path, name , component
+    -- make riuter history
+    -- return export defaults const
+    -- goto app.vue  page rename App.vue
+    -- add router before mount
+
+05.  goto App.vue
+    -- make temaple for routing
+    -- make route-link tag to declare
+    -- make route-view tag for show
+    -- if refresh the page show error(solve later)
+    -- goto web.php and folow
+        Route::get('/{any}', function () {
+            return view('welcome');
+        })->where('any','.*');

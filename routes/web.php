@@ -15,10 +15,10 @@ use App\Http\Controllers\Admin\IndexController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/{any}', function () {
     return view('welcome');
     // return view('auth.admin.login');
-});
+})->where('any','.*');
 
 Route::get('/auth', function () {
     return view('auth.admin.login');

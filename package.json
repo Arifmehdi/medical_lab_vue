@@ -16,6 +16,7 @@
         "vue": "^3.2.37"
     },
     "dependencies": {
-        "@next-vue/vue-loader": "^0.0.1-alpha.2"
+        "@next-vue/vue-loader": "^0.0.1-alpha.2",
+        "vue-router": "^4.0.13"
     }
 }
