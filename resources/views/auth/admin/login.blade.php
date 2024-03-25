@@ -9,14 +9,14 @@
     <span class="login100-form-title p-b-43">
         {{__('Login Admin')}}
     </span>
-    
+
     <div class="wrap-input100 validate-input @if($errors->has('email')) error-validation @endif">
         <input class="input100" type="email" name="email" id="email" value="{{old('email')}}" required>
         <span class="focus-input100"></span>
         <span class="label-input100">{{__('Email')}}</span>
     </div>
-    
-    
+
+
     <div class="wrap-input100 validate-input @if($errors->has('password')) error-validation @endif">
         <input class="input100" type="password" name="password" id="password" required>
         <span class="focus-input100"></span>
@@ -49,9 +49,9 @@
 </form>
 
 <span class="login100-form-title p-b-30 p-t-30">
-    <a href="{{url('/')}}"> 
+    <a href="{{url('/')}}">
         <h5 class="d-inline">
-            <i class="fas fa-user-injured"></i> 
+            <i class="fas fa-user-injured"></i>
             {{__('Login Patient')}}
         </h5>
     </a>

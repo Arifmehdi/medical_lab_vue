@@ -17,6 +17,7 @@ use App\Http\Controllers\Admin\IndexController;
 
 Route::get('/', function () {
     return view('welcome');
+    // return view('auth.admin.login');
 });
 
 Route::get('/auth', function () {

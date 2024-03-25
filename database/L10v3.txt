@@ -1,0 +1,36 @@
+source = watch?v=8_ptB59jcWM&list=PLT51dtioU1pNUZtUhg9pmKpa8JyaCVUXh&index=1
+
+Tools - L -10
+        v - 3
+
+01. introduction vite
+    -- remove webpack.mix.js and add vite.config.js in laravel 9
+    -- wahich are shown in bottom in laravel
+    -- vite version check in package json
+    -- where axios add defaultly
+    -- laravel vite doumtation
+    --
+
+02. vue install with vue loader
+    -- npm install vue@next vue-loader@next ##not worked
+    -- npm i @next-vue/vue-loader
+
+03. goto resources > js > app.js
+   -- import create app from vue
+   -- create layout folder
+   -- make app.vue file
+   -- import app.vue in app.js & connect with id and mount
+   -- e.g. createApp(app).mount('#app')
+   -- see the wow result
+   -- install npm i @vitejs/plugin-vue for hot reload
+   -- follow instruction
+
+       // vite.config.js
+        import vue from '@vitejs/plugin-vue'
+
+        export default {
+        plugins: [vue()],
+        }
+04. vue router for routing
+    -- page create with parrallaly with component
+    --
