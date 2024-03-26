@@ -2,15 +2,18 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Sanctum\HasApiTokens;
+use Spatie\Activitylog\LogOptions;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Activitylog\Traits\LogsActivity;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
     use Notifiable;
-    use LogsActivity;
+    use HasApiTokens;
+    // use LogsActivity;
 
     /**
      * The attributes that are mass assignable.
@@ -54,6 +57,13 @@ class User extends Authenticatable
     {
         return "User was {$eventName}";
     }
+    // public function getActivitylogOptions(): LogOptions
+    // {
+    //     $logOptions = new LogOptions();
 
-  
+    //     // Customize log options as needed
+    //     $logOptions->logName = 'user_activities';
+
+    //     return $logOptions;
+    // }
 }

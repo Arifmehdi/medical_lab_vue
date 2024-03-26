@@ -52,3 +52,13 @@ Tools - L -10
         Route::get('/{any}', function () {
             return view('welcome');
         })->where('any','.*');
+
+06. laravel authenticate with sanctum
+    -- go to http > kernel
+    -- uncomment api > stateful middlwar class
+    -- laravel already give a api route for fetch user data
+    -- make Api/AuthContriller
+    -- go to auth controller
+    -- make register nathod and logic
+    -- make login nathod and logic
+    -- make controller group route in route api.php
